@@ -1,0 +1,43 @@
+{
+  "name": "@eagles-jungscharen/ct-appportal",
+  "version": "1.0.0",
+  "description": "Portal für Applikationen die einer Organisation zur Verfügung gestellt werden. Nutzt den churchtool-idp für das Login.",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "npm run dev --workspace=@eagles-jungscharen/ct-appportal-frontend",
+    "dev:backend": "npm run dev --workspace=@eagles-jungscharen/ct-appportal-backend",
+    "build": "npm run build --workspaces --if-present",
+    "build:frontend": "npm run build --workspace=@eagles-jungscharen/ct-appportal-frontend",
+    "build:backend": "npm run build --workspace=@eagles-jungscharen/ct-appportal-backend",
+    "lint": "npm run lint --workspaces --if-present",
+    "generate:types": "dotnet run --project packages/backend/Tools/DtoTypeGenerator packages/shared/src/generated/dtos.ts",
+    "generate:env": "node scripts/generate-env.js",
+    "clean": "sh scripts/clean.sh",
+    "postinstall": "echo '✅ Dependencies installed. Run npm run generate:env to create environment files.'"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "~6.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eagles-Jungscharen/ct-appportal.git"
+  },
+  "keywords": [
+    "portal",
+    "authentication",
+    "churchtool",
+    "monorepo"
+  ],
+  "author": "Eagles Jungscharen",
+  "license": "Apache-2.0"
+}

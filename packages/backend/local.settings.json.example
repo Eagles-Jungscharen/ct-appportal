@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "",
+    "OIDC_AUTHORITY_URL": "https://your-churchtool-idp.example.com/api/oidc",
+    "CHURCHTOOL_IDP_BASE_URL": "https://your-churchtool-idp.example.com",
+    "CHURCHTOOL_IDP_FUNCTION_KEY": "your-function-key-here",
+    "CHURCHTOOL_URL": "https://your-org.church.tools",
+    "CHURCHTOOL_ADMIN_GROUP_ID": "6",
+    "CHURCHTOOL_IDP_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=...;AccountKey=...;EndpointSuffix=core.windows.net"
+  },
+  "Host": {
+    "CORS": "http://localhost:5173",
+    "CORSCredentials": true
+  }
+}

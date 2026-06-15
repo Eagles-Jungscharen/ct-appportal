@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "🏠 ct-appportal (Root)"
+    },
+    {
+      "path": "packages/frontend",
+      "name": "🎨 Frontend (React)"
+    },
+    {
+      "path": "packages/backend",
+      "name": "⚙️ Backend (Azure Functions)"
+    },
+    {
+      "path": "packages/shared",
+      "name": "📦 Shared (Types)"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "eslint.workingDirectories": [
+      "packages/frontend"
+    ],
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/bin": true,
+      "**/obj": true,
+      "**/__azurite*": true,
+      "**/__blobstorage__": true,
+      "**/__queuestorage__": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bin": true,
+      "**/obj": true,
+      "**/dist": true,
+      "**/.git": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-dotnettools.csharp",
+      "ms-azuretools.vscode-azurefunctions",
+      "github.copilot",
+      "github.copilot-chat"
+    ]
+  }
+}

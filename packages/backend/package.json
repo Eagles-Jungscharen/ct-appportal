@@ -1,0 +1,11 @@
+{
+  "name": "@eagles-jungscharen/ct-appportal-backend",
+  "version": "1.0.0",
+  "description": ".NET 10 Azure Functions Backend für ct-appportal",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Use Azure Functions Core Tools: func start' && func start --csharp",
+    "build": "dotnet build",
+    "clean": "dotnet clean"
+  }
+}
