@@ -1,0 +1,6 @@
+{
+  "outputs": {
+    "frontendStorageAccountName": "<your-storage-account-name>",
+    "functionAppName": "<your-function-app-name>"
+  }
+}
